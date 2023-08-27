@@ -1,33 +1,20 @@
 import React, { FC, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 import Link from "next/link";
-
 import styles from "./Dropdown.module.scss";
 import Button from "../../../../UI/Button/Button";
 import Logo from "../../../../UI/Logo/Logo";
 import Cross from "../../../Icons/Cross";
 import classNames from "classnames";
 import { createFocusTrap } from "focus-trap";
-import { useAuth } from "@/hooks/useAuth";
-import { useRouter } from "next/router";
-import { useTypedDispatch } from "@/hooks/useTypedDispatch";
-import { logout } from "@/store/auth/auth.slice";
 
 interface Props {
   isDropdown: boolean;
   setIsDropdown: React.Dispatch<React.SetStateAction<boolean>>;
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
+const Dropdown: FC<Props> = ({ isDropdown, setIsDropdown }) => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const dispatch = useTypedDispatch();
-  const { pathname } = useRouter();
-
-  const handleLogout = () => {
-    dispatch(logout());
-  };
-
   useEffect(() => {
     const trap = createFocusTrap(ref.current as HTMLDivElement, {
       allowOutsideClick: true
@@ -69,7 +56,7 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
                 onClick={() => setIsDropdown(false)}
                 scroll={false}
               >
-                Тарифы и цены
+                Пожертвовать
               </Link>
             </li>
             <li>
@@ -78,7 +65,7 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
                 onClick={() => setIsDropdown(false)}
                 scroll={false}
               >
-                Заявка на обучение
+                Задать вопрос
               </Link>
             </li>
             <li>
@@ -88,37 +75,12 @@ const Dropdown: FC<Props> = ({ setIsModalShow, isDropdown, setIsDropdown }) => {
         </nav>
         <div className={styles.actions}>
           <Button
-            onClick={() => (document.location.href = "tel:89857751262")}
+            onClick={() => (document.location.href = "tel:380999999999")}
             className={styles.phone}
             primary
           >
-            +7 (985) 775-12-62
+            +38 (099) 999-99-99
           </Button>
-          {useAuth() ? (
-            pathname.includes("profile") ? (
-              <Button
-                onClick={handleLogout}
-                className={styles.profile}
-                secondary
-              >
-                Выйти
-              </Button>
-            ) : (
-              <Link href="/profile">
-                <Button className={styles.profile} secondary>
-                  Профиль
-                </Button>
-              </Link>
-            )
-          ) : (
-            <Button
-              onClick={() => setIsModalShow(true)}
-              className={styles.authorize}
-              secondary
-            >
-              Авторизация
-            </Button>
-          )}
         </div>
       </div>
     </div>,

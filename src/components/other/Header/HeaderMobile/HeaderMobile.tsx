@@ -1,5 +1,4 @@
 import React, { FC, useState } from "react";
-
 import styles from "./HeaderMobile.module.scss";
 import Logo from "../../../UI/Logo/Logo";
 import Burger from "../../Icons/Burger";
@@ -9,11 +8,7 @@ const Dropdown = dynamic(import("./Dropdown/Dropdown"), {
   ssr: false
 });
 
-interface Props {
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HeaderMobile: FC<Props> = ({ setIsModalShow }) => {
+const HeaderMobile: FC = () => {
   const [isDropdown, setIsDropdown] = useState<boolean>(false);
 
   return (
@@ -23,7 +18,6 @@ const HeaderMobile: FC<Props> = ({ setIsModalShow }) => {
         <Burger />
       </button>
       <Dropdown
-        setIsModalShow={setIsModalShow}
         isDropdown={isDropdown}
         setIsDropdown={setIsDropdown}
       />

@@ -1,27 +1,10 @@
 import React, { FC } from "react";
-
 import styles from "./HeaderDesktop.module.scss";
-
 import Logo from "../../../UI/Logo/Logo";
 import Link from "next/link";
 import Button from "../../../UI/Button/Button";
-import { useAuth } from "@/hooks/useAuth";
-import { useRouter } from "next/router";
-import { useTypedDispatch } from "@/hooks/useTypedDispatch";
-import { logout } from "@/store/auth/auth.slice";
 
-interface Props {
-  setIsModalShow: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
-  const dispatch = useTypedDispatch();
-  const { pathname } = useRouter();
-
-  const handleLogout = () => {
-    dispatch(logout());
-  };
-
+const HeaderDesktop: FC = () => {
   return (
     <header className={styles.desktop}>
       <div className={styles.about}>
@@ -30,12 +13,12 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
           <ul>
             <li>
               <Link href="/#categories" scroll={false}>
-                Тарифы и цены
+                Пожертвовать
               </Link>
             </li>
             <li>
               <Link href="/#form" scroll={false}>
-                Заявка на обучение
+                Задать вопрос
               </Link>
             </li>
             <li>
@@ -46,33 +29,12 @@ const HeaderDesktop: FC<Props> = ({ setIsModalShow }) => {
       </div>
       <div className={styles.actions}>
         <Button
-          onClick={() => (document.location.href = "tel:89857751262")}
+          onClick={() => (document.location.href = "tel:380999999999")}
           className={styles.phone}
           primary
         >
-          +7 (985) 775-12-62
+          +38 (099) 999-99-99
         </Button>
-        {useAuth() ? (
-          pathname.includes("profile") ? (
-            <Button onClick={handleLogout} className={styles.profile} secondary>
-              Выйти
-            </Button>
-          ) : (
-            <Link href="/profile">
-              <Button className={styles.profile} secondary>
-                Профиль
-              </Button>
-            </Link>
-          )
-        ) : (
-          <Button
-            onClick={() => setIsModalShow((prev) => !prev)}
-            className={styles.authorize}
-            secondary
-          >
-            Авторизация
-          </Button>
-        )}
       </div>
     </header>
   );
