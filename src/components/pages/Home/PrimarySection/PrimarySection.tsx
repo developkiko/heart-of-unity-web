@@ -28,10 +28,10 @@ const PrimarySection: FC = () => {
       className={styles.section}
     >
       <article className={styles.majorArticle}>
-        <h1>Научитесь водить уже через 3 месяца</h1>
+        <h1>Здесь самый первый заголовок страницы</h1>
         <p>
-          Научитесь водить уже через 3 месяца. Предостовляем высококачественные
-          уроки вождения с 2000 года и выпускаем более 450 студентов в месяц.
+          Здесь нужен не менее значимый по содержанию текст,
+          который был бы способный побудить пользователя к действиям.
         </p>
         <Link href="/#form" scroll={false}>
           <Button primary>
@@ -43,23 +43,23 @@ const PrimarySection: FC = () => {
       <div className={styles.items}>
         <article>
           <Image src={chart} alt="График" />
-          <h4>График</h4>
-          <p>Подстраивающийся под вас</p>
+          <h4>Преимущество #1</h4>
+          <p>Описание преимущества #1</p>
         </article>
         <article>
           <Image src={fleet} alt="Автопарк" />
-          <h4>Автопарк</h4>
-          <p>Ежегодно обновляется</p>
+          <h4>Преимущество #2</h4>
+          <p>Описание преимущества #2</p>
         </article>
         <article>
           <Image src={instructor} alt="Инструктора" />
-          <h4>Инструктора</h4>
-          <p>С опытом не менее 5 лет</p>
+          <h4>Преимущество #3</h4>
+          <p>Описание преимущества #3</p>
         </article>
         <article>
           <Image src={discount} alt="Рассрочка и скидки" />
-          <h4>Рассрочка и скидки</h4>
-          <p>На 12 м. и скидки студентам</p>
+          <h4>Преимущество #4</h4>
+          <p>Описание преимущества #4</p>
         </article>
       </div>
       <Swiper
@@ -75,29 +75,29 @@ const PrimarySection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <Image src={chart} alt="График" />
-            <h4>График</h4>
-            <p>Подстраивающийся под вас</p>
+            <h4>Преимущество #1</h4>
+            <p>Описание преимущества #1</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <Image src={fleet} alt="Автопарк" />
-            <h4>Автопарк</h4>
-            <p>Ежегодно обновляется</p>
+            <h4>Преимущество #2</h4>
+            <p>Описание преимущества #2</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <Image src={instructor} alt="Инструктора" />
-            <h4>Инструктора</h4>
-            <p>С опытом не менее 5 лет</p>
+            <h4>Преимущество #3</h4>
+            <p>Описание преимущества #3</p>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <Image src={discount} alt="Рассрочка и скидки" />
-            <h4>Рассрочка и скидки</h4>
-            <p>На 12 м. и скидки студентам</p>
+            <h4>Преимущество #4</h4>
+            <p>Описание преимущества #4</p>
           </article>
         </SwiperSlide>
       </Swiper>

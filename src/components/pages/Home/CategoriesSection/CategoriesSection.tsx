@@ -28,20 +28,20 @@ const CategoriesSection: FC = () => {
       className={styles.section}
       id="categories"
     >
-      <Heading>Выберите категорию</Heading>
+      <Heading>Тут заголовок</Heading>
       <div className={styles.categories}>
         <article>
           <h3>
-            Категория <span>B</span>
+            Подзаголовок <span>1</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarB} alt="Машина категории B" />
+            <Image src={categoryCarB} alt="Картинка 1" />
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>23 400 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>$23 400</span>
+              <span>дополнительный текст</span>
             </li>
             <li>
               <Image src={theory} alt="Иконка теории" />
@@ -56,22 +56,22 @@ const CategoriesSection: FC = () => {
           </ul>
           <Link href="/#form" scroll={false}>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </Link>
         </article>
         <article>
           <h3>
-            Категория <span>C</span>
+            Подзаголовок <span>2</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarC} alt="Машина категории C" />
+            <Image src={categoryCarC} alt="Картинка 2" />
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>33 500 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>$33 500</span>
+              <span>дополнительный текст</span>
             </li>
             <li>
               <Image src={theory} alt="Иконка теории" />
@@ -86,22 +86,22 @@ const CategoriesSection: FC = () => {
           </ul>
           <Link href="/#form" scroll={false}>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </Link>
         </article>
         <article>
           <h3>
-            Категория <span>CE</span>
+            Подзаголовок <span>3</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarCE} alt="Машина категории CE" />
+            <Image src={categoryCarCE} alt="Картинка 3" />
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>45 000 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>$45 000</span>
+              <span>дополнительный текст</span>
             </li>
             <li>
               <Image src={theory} alt="Иконка теории" />
@@ -116,22 +116,22 @@ const CategoriesSection: FC = () => {
           </ul>
           <Link href="/#form" scroll={false}>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </Link>
         </article>
         <article>
           <h3>
-            Категория <span>D</span>
+            Подзаголовок <span>4</span>
           </h3>
           <div className={styles.img}>
-            <Image src={categoryCarD} alt="Машина категории D" />
+            <Image src={categoryCarD} alt="Картинка 4" />
           </div>
           <ul>
             <li>
               <Image src={price} alt="Иконка цены" />
-              <span className={styles.heading}>26 000 ₽</span>
-              <span>с учётом топлива</span>
+              <span className={styles.heading}>$26 000</span>
+              <span>дополнительный текст</span>
             </li>
             <li>
               <Image src={theory} alt="Иконка теории" />
@@ -146,7 +146,7 @@ const CategoriesSection: FC = () => {
           </ul>
           <Link href="/#form" scroll={false}>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </Link>
         </article>
@@ -164,16 +164,16 @@ const CategoriesSection: FC = () => {
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>B</span>
+              Подзаголовок <span>1</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarB} alt="Машина категории B" />
+              <Image src={categoryCarB} alt="Картинка 1" />
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>23 400 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>$23 400</span>
+                <span>дополнительный текст</span>
               </li>
               <li>
                 <Image src={theory} alt="Иконка теории" />
@@ -187,23 +187,23 @@ const CategoriesSection: FC = () => {
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>C</span>
+              Подзаголовок <span>2</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarC} alt="Машина категории C" />
+              <Image src={categoryCarC} alt="Картинка 2" />
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>33 500 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>$33 500</span>
+                <span>дополнительный текст</span>
               </li>
               <li>
                 <Image src={theory} alt="Иконка теории" />
@@ -217,23 +217,23 @@ const CategoriesSection: FC = () => {
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>CE</span>
+              Подзаголовок <span>3</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarCE} alt="Машина категории CE" />
+              <Image src={categoryCarCE} alt="Картинка 3" />
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>45 000 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>$45 000</span>
+                <span>дополнительный текст</span>
               </li>
               <li>
                 <Image src={theory} alt="Иконка теории" />
@@ -247,23 +247,23 @@ const CategoriesSection: FC = () => {
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </article>
         </SwiperSlide>
         <SwiperSlide className={styles.slide}>
           <article>
             <h3>
-              Категория <span>D</span>
+              Подзаголовок <span>4</span>
             </h3>
             <div className={styles.img}>
-              <Image src={categoryCarD} alt="Машина категории D" />
+              <Image src={categoryCarD} alt="Картинка 4" />
             </div>
             <ul>
               <li>
                 <Image src={price} alt="Иконка цены" />
-                <span className={styles.heading}>26 000 ₽</span>
-                <span>с учётом топлива</span>
+                <span className={styles.heading}>$26 000</span>
+                <span>дополнительный текст</span>
               </li>
               <li>
                 <Image src={theory} alt="Иконка теории" />
@@ -277,7 +277,7 @@ const CategoriesSection: FC = () => {
               </li>
             </ul>
             <Button primary>
-              Записаться <Arrow />
+              Пожертвовать <Arrow />
             </Button>
           </article>
         </SwiperSlide>

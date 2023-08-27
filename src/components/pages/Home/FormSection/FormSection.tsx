@@ -16,7 +16,7 @@ const FormSection: FC = () => {
       className={styles.section}
       id="form"
     >
-      <Heading>Подробная заявка на обучение</Heading>
+      <Heading>Заполните форму, что бы оставить заявку</Heading>
       <form className={styles.form}>
         <div className={styles.inputs}>
           <InputSecondary
@@ -53,32 +53,32 @@ const FormSection: FC = () => {
         </div>
         <div className={styles.buttons}>
           <div>
-            <h5>Желаемые категории</h5>
+            <h5>Суть вашего вопроса</h5>
             <div className={styles.category}>
               <Radio
                 required
-                title="B (легковой автомобиль)"
+                title="Я хочу помочь"
                 name="category"
                 defaultValue="B"
                 dark
               />
               <Radio
                 required
-                title="C (грузовой автомобиль)"
+                title="Помогите мне"
                 name="category"
                 defaultValue="C"
                 dark
               />
               <Radio
                 required
-                title="CE (грузовой автомобиль с прицепом)"
+                title="сотрудничество"
                 name="category"
                 defaultValue="CE"
                 dark
               />
               <Radio
                 required
-                title="D (автобус)"
+                title="другой вопрос"
                 name="category"
                 defaultValue="D"
                 dark

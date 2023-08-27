@@ -49,10 +49,10 @@ const ContactsSection: FC = () => {
               <Phone /> <h6>Позвони сейчас</h6>
             </span>
             <span>
-              <a href="tel:89857751262">+7 (985) 775-12-62</a>
+              <a href="tel:380999999999">+38 (099) 999-99-99</a>
             </span>
             <span>
-              <a href="tel:89857755216">+7 (985) 775-52-16</a>
+              <a href="tel:380666666666">+38 (066) 666-66-66</a>
             </span>
           </li>
           <li>
@@ -60,10 +60,10 @@ const ContactsSection: FC = () => {
               <Mail /> <h6>Email</h6>
             </span>
             <span>
-              <a href="mailto:support@autoschool.org">support@autoschool.org</a>
+              <a href="mailto:support@heart-of-unity.org">support@heart-of-unity.org</a>
             </span>
             <span>
-              <a href="mailto:info@autoschool.org">info@autoschool.org</a>
+              <a href="mailto:info@heart-of-unity.org">info@heart-of-unity.org</a>
             </span>
           </li>
           <li>
@@ -72,12 +72,11 @@ const ContactsSection: FC = () => {
             </span>
             <span>
               <a
-                href="https://yandex.ru/maps/-/CCUvbUTgPD"
+                href="https://goo.gl/maps/zrUXPfqv5tczGg737"
                 rel="noreferrer"
                 target="_blank"
               >
-                754071, Московская область, город Сергиев Посад, улица 40 лет
-                Октября, 5А
+                Днепр, пр. Гагарина 26
               </a>
             </span>
           </li>
